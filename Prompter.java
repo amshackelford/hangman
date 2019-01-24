@@ -1,3 +1,4 @@
+// Contains prompt display
 import java.util.Scanner;
 
 public class Prompter {

@@ -1,3 +1,4 @@
+// Contains game logic
 public class Game {
   public static final int MAX_MISSES = 7;
   private String answer;
