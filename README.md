@@ -1,6 +1,6 @@
 ## **Hangman** ##
 
-This repo contains files created through Treehouse that have been updated & enhanced to play the game Hangman. For multiplayer, provide an word for the args value for others to guess. If no args value is provided the game has been updated to pull a random word from a pool of words for you to guess.
+This repo contains files created through Treehouse that have been updated & enhanced to play the game Hangman. For multiplayer, provide a word for the args value for others to guess. If no args value is provided the game has been updated to pull a random word from a pool of words for you to guess.
 
 ##### **The classes are as follows:** #####
 * Hangman - Programs starting point, game contines while there are tries remaining and game still in progress.
