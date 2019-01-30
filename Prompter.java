@@ -1,4 +1,7 @@
-// Contains prompt display
+/* This class contains text that player will see during game, informs number of tries left, 
+ * if they've won or loss, and will prompt for a letter guess.
+ */
+ 
 import java.util.Scanner;
 
 public class Prompter {
