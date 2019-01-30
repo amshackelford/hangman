@@ -1,3 +1,5 @@
+// This class is used to get a random word that will be guessed during game if no arg was provided
+
 import java.util.Random;
 
 public class WordBank {
@@ -10,6 +12,7 @@ public class WordBank {
     "sun", "mercury", "venus", "earth", "mars", "jupiter", "saturn", "neptune", "uranus", "pluto"
   };
   
+  // Returns random word from answers array that will be guessed
   public static String getRandomWord() {
     Random randomNum = new Random();
     int randomGenerator = randomNum.nextInt(answers.length);
