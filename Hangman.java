@@ -1,4 +1,7 @@
-// Main starts game
+/* This class contains main method, user can enter a word as args to have others guess, 
+ * otherwise a random word will be used from WordBank.
+ */
+
 public class Hangman {
 
   public static void main(String[] args) {

@@ -1,4 +1,8 @@
-// Contains game logic
+/* This class contains the game logic (correct/incorrect guesses, the answer being gueesed).
+ * Methods include get reamining tries, checking if game was won, getting progress, checking
+ * for correct and incorrect guesses, and returning answer.
+ */
+
 public class Game {
   public static final int MAX_MISSES = 7;
   private String answer;
@@ -16,6 +20,7 @@ public class Game {
     return answer;
   }
   
+  // This method checks if character entered is valid, and if it's been used.
   private char normalizeGuess(char letter) {
     if (! Character.isLetter(letter)) {
       throw new IllegalArgumentException("A letter is required");
@@ -27,6 +32,7 @@ public class Game {
     return letter;
   }
   
+  // If user enters a word, this method take first letter and checks if that is in answer
   public boolean applyGuess(String letters) {
     if (letters.length() == 0 ) {
       throw new IllegalArgumentException("No letter found");
@@ -34,6 +40,7 @@ public class Game {
     return applyGuess(letters.charAt(0));
   }
   
+  // Checks if letter provided is in answer
   public boolean applyGuess(char letter) {
     letter = normalizeGuess(letter);
     boolean isHit = answer.indexOf(letter) != -1;
@@ -49,6 +56,7 @@ public class Game {
     return MAX_MISSES - misses.length();
   }
   
+  // Shows letters that have been guessed correctly, a hyphen is shown for letters not guessed yet
   public String getCurrentProgress() {
     String progress = "";
     for (char letter : answer.toCharArray()) {
