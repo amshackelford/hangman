@@ -2,6 +2,8 @@
 
 This repo contains files created through Treehouse courses that have been updated & enhanced to play the game Hangman. For multiplayer, provide a word for the args value for others to guess. If no args value is provided the game has been enhanced to pull a random word from a pool of words for you to guess.
 
+Update: If providing a an answer as argument to be guessed at command prompt, the string can now inlcude spaces.
+
 ##### **The classes are as follows:** #####
 * Hangman - Program's starting point, game continues while there are tries remaining and word has not been guessed.
 * Prompter - Contains methods for what user will see ("Enter a guess", "Game Won/Loss", "Tries left" etc.)
